@@ -18,12 +18,12 @@ pip install -r requirements.txt
 ```
 python sequence_extraction.py
 ```
-### 3. Generate LMDB for training:
+### 3. Generate LMDB data for training:
 ```
 python create_lmdb.py --opt_path step1.yml
 ```
 
-## Examples of instructions required during training(4, 2 and single GPUs):
+## Examples of instructions required during training (4, 2 and single GPUs):
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch --nproc_per_node=4 --master_port=12345 train_step1.py --opt_path step1.yml
 ```
