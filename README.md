@@ -6,13 +6,13 @@ The overall training consists of three steps: training of the baseline model(tra
 
 ## Dataset preparing:
 
-# 1. Download the dataset through https://github.com/Archer-Tatsu/VQA-ODV.
+### 1. Download the dataset through https://github.com/Archer-Tatsu/VQA-ODV.
 
-# 2. Preparing data through the sequence extraction method:
+### 2. Preparing data through the sequence extraction method:
 ```
 python sequence_extraction.py
 ```
-# 3. Generate LMDB for training:
+### 3. Generate LMDB for training:
 ```
 python create_lmdb.py --opt_path step1.yml
 ```
