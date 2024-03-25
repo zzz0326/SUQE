@@ -2,6 +2,14 @@
 
 The overall training consists of three steps: training of the baseline model(train_baseline.py), shift prediction model(train_SPM.py) and unsupervised domain adaption(train_UDA.py). Each step requires updating the yml file according to the directory of the data, processing the specified panoramic video data, and training. 
 
+## Environment:
+```
+conda create -n SUQE python=3.7 -y && conda activate SUQE
+```
+```
+pip install -r requirements.txt
+```
+
 ## Dataset preparing:
 
 ### 1. Download the dataset through https://github.com/Archer-Tatsu/VQA-ODV.
