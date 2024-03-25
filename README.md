@@ -2,9 +2,20 @@
 
 The enhancement videos can be seen in the result folder.
 
-You need to download the dataset through https://github.com/Archer-Tatsu/VQA-ODV.
+The overall training consists of three steps: training of the baseline model(train_baseline.py), shift prediction model(train_SPM.py) and unsupervised domain adaption(train_UDA.py). Each step requires updating the yml file according to the directory of the data, processing the specified panoramic video data, and training. 
 
-The overall training consists of three steps: training of the baseline model(train_baseline.py), shift prediction model(train_SPM.py) and unsupervised domain adaption(train_UDA.py). Each step requires processing the specified panoramic video data and updating the yml file according to the directory of the processed data. Programs that process data and yml file examples are stored in the process_data and config files respectively. 
+## Dataset preparing:
+
+# 1. Download the dataset through https://github.com/Archer-Tatsu/VQA-ODV.
+
+# 2. Preparing data through the sequence extraction method:
+```
+python sequence_extraction.py
+```
+# 3. Generate LMDB for training:
+```
+python create_lmdb.py --opt_path step1.yml
+```
 
 ## Examples of instructions required during training(4, 2 and single GPUs):
 ```
