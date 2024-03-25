@@ -1,7 +1,5 @@
 # Stable Viewport-Based Unsupervised Compressed 360° Video Quality Enhancement
 
-The enhancement videos can be seen in the result folder.
-
 The overall training consists of three steps: training of the baseline model(train_baseline.py), shift prediction model(train_SPM.py) and unsupervised domain adaption(train_UDA.py). Each step requires updating the yml file according to the directory of the data, processing the specified panoramic video data, and training. 
 
 ## Dataset preparing:
